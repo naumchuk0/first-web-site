@@ -1,0 +1,107 @@
+#Str{
+	background: rebeccapurple;
+	color: white;
+	width: 100px;
+	height: 20px;
+	text-align: center;
+	text-decoration: none;
+	padding: 20px;
+	margin-top: 20px;
+	display: inline-block;
+	border-radius: 20px;
+	cursor: pointer;
+}
+#Mode{
+	width: 50px;
+	height: 10px;
+	text-decoration: none;
+	margin: 20px;
+	display: inline;
+	color: white;
+}
+.But{
+	width: 75px;
+	height: 75px;
+	color: white;
+	background: mediumpurple;
+	text-align: center;
+	text-decoration: none;
+	padding: 10px 15px;
+	display: inline-block;
+	border-radius: 20px;
+	border-color: lightgray;
+	border: none;
+}
+.Lose {
+	width: 175px;
+	height: 50px;
+	color: white;
+	background: rebeccapurple;
+	text-align: center;
+	text-decoration: none;
+	padding: 10px 15px;
+	display: inline-block;
+	border-radius: 20px;
+	border-color: lightgray;
+	border: none;
+}
+.Win {
+	width: 175px;
+	height: 50px;
+	color: white;
+	background: purple;
+	text-align: center;
+	text-decoration: none;
+	padding: 10px 15px;
+	display: inline-block;
+	border-radius: 20px;
+	border-color: lightgray;
+	border: none;
+}
+#ForDiv{
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    gap: 5px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: 5s;
+    z-index: -1;
+}
+#ForDiv2{
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    gap: 5px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+    transition: 5s;
+}
+img{
+	height: 75px;
+	width: 75px;
+}
+body{
+	background: #303030;
+}
+.hidden{
+	transform: scale(0);
+}
+.blu {
+	filter: blur(1.5rem);
+}
+.gn{
+	background: green !important;
+}
+.resets {
+	background: mediumpurple !important;
+}

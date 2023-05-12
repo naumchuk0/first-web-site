@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title> 
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	<a id="Str">Start</a>
+	<form id="Mode">
+		<input type="radio" name="Name?" value="easy">Easy
+		<input type="radio" name="Name?" value="hard">Hard
+		<input type="radio" name="Name?" value="very easy">For mikola
+	</form>
+
+	<div id="ForDiv" class="hidden">
+	</div>
+	<div id="ForDiv2" class="hidden">
+	</div>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+	<script type="text/javascript" src="script.js"></script>
+
+	<script>
+		let game = new Cellpie();
+
+		$("#Str").on("click", function() {
+			game.loh();
+		});	
+	</script>
+
+	
+</body>
+</html>
