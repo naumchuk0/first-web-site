@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<a id="But">Ready!</a>
+	<button id="changeBackgroundSal"></button>
+	<button id="changeBackgroundBla" class="hidden"></button>
+
+	<div id="div" class="center">
+		<div id="divForWords" class="hidden"></div>
+		<input type="text" id="txt" placeholder="type text"></input>
+		<p id="timer">60</p>
+	</div>
+
+	<div class="center hidden" id="divResult">
+	</div>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+
+	<script type="text/javascript">
+		let start = new Popa();
+		$("#But").on('click', function() {
+			start.loh();
+		});
+	</script>
+
+</body>
+</html>
