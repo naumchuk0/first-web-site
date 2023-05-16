@@ -3,14 +3,36 @@ class Cellpie {
 		this.Jake = $("#ForDiv");
 		this.Bob = $("#ForDiv2");
 		this.lust_boy = 0;
+		this.timeleft = 0;
 	}
 	s_b_e(qwe) {
-		var self = this;
+		var self = this
 		self.Jake.children("button").on("click", function() {
+			if ($(this).val() == 1) {
+				self.timeleft = qwe * 2;
+				self.timer = setInterval(function(){
+					if (self.timeleft <= 0) {
+						clearInterval(self.timer);
+						self.Jake.addClass('blu');
+						self.Bob.append(`<button class="Lose">You Lose!</button>`);
+						self.Bob.removeClass('hidden');
+						self.Bob.children().on("click", function() {
+						$(this).remove();
+						self.Bob.addClass('hidden');
+						self.Jake.removeClass('blu');
+						self.Jake.children().removeClass('gn');
+				});
+				self.lust_boy = 0;
+					}
+					document.getElementById("timer").innerHTML = self.timeleft;
+					self.timeleft--;
+				}, 1000);
+			}
    			if ($(this).val() == self.lust_boy + 1) {
    				$(this).addClass('gn');
 				self.lust_boy++;
 				if ($(this).val() == qwe) {
+					clearInterval(self.timer);
 					self.Jake.addClass('blu');
 					self.Bob.append(`<button class="Win">You Won!</button>`);
 					self.Bob.removeClass('hidden');
@@ -23,8 +45,12 @@ class Cellpie {
 				self.lust_boy = 0;
 				}
 			}
-			else {
+			else if($(this).val() != self.lust_boy + 1 && self.lust_boy != 0) {
+				clearInterval(self.timer);
 				self.Jake.addClass('blu');
+				if (self.Bob.children().val() != 1) {
+					self.Bob.children().remove();
+				}
 				self.Bob.append(`<button class="Lose">You Lose!</button>`);
 				self.Bob.removeClass('hidden');
 				self.Bob.children().on("click", function() {
@@ -42,7 +68,6 @@ class Cellpie {
 		this.Jake.children().remove();
 		this.Jake.css("grid-template-rows", `repeat(${Math.sqrt(qwerty+1)}, 1fr)`);
 		this.Jake.css("grid-template-columns", `repeat(${Math.sqrt(qwerty+1)}, 1fr)`);
-
 		let arr = [];
 		for (var i = 0; i < qwerty; i++) {
 			arr[i] = i + 1;
@@ -56,6 +81,8 @@ class Cellpie {
 		this.s_b_e(qwerty);
 	}
 	loh() {
+		this.lust_boy = 0;
+		clearInterval(this.timer);
 		switch($("#Mode input[type='radio']:checked").val()) {
 			case "easy":
 				this.generateABOBUS(8);

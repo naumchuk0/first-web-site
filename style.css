@@ -11,6 +11,19 @@
 	border-radius: 20px;
 	cursor: pointer;
 }
+#timer {
+	position: absolute;
+	margin: auto;
+	width: fit-content;
+    height: fit-content;
+	font-size: 32px;
+	color:snow;
+	padding: 20px;
+	margin-top: 20px;
+	top: 0;
+	right: 0;
+	left: 0;
+}
 #Mode{
 	width: 50px;
 	height: 10px;
@@ -70,7 +83,6 @@
     right: 0;
     margin: auto;
     transition: 5s;
-    z-index: -1;
 }
 #ForDiv2{
     width: fit-content;
@@ -83,7 +95,6 @@
     left: 0;
     right: 0;
     margin: auto;
-    z-index: 1;
     transition: 5s;
 }
 img{
