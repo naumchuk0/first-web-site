@@ -1,5 +1,5 @@
 body {
-	background: salmon;
+	background: #303030;
 	margin: 0;
 	padding: 0;
 	transition: 1s;
@@ -11,12 +11,12 @@ h1, h2, h3, h4, h5, h6, p, form, button, input, textarea {
 }
 
 #But {
-	background: #303030;
+	background: salmon;
 	color: white;
 	width: 140px;
-	height: 30px;
+	height: 20px;
 	text-align: center;
-	font-family: cursive;
+	font-family: math;
 	text-decoration: none;
 	padding: 20px 15px;
 	margin-top: 20px;
@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6, p, form, button, input, textarea {
 }
 
 #changeBackgroundSal {
-	background: #303030;
+	background: salmon;
 	height: 20px;
 	width: 40px;
 	padding: 20px 15px;
@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6, p, form, button, input, textarea {
 }
 
 #changeBackgroundBla {
-	background: salmon;
+	background: #303030;
 	height: 20px;
 	width: 40px;
 	padding: 20px 15px;
@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6, p, form, button, input, textarea {
 	right: 0;
 	bottom: 0;
 	font-size: 32px;
-	font-family: cursive;
+	font-family: math;
 }
 
 #txt {
@@ -75,10 +75,11 @@ h1, h2, h3, h4, h5, h6, p, form, button, input, textarea {
 	border: none;
 	outline: none;
 	font-weight: 700;
+	font-family: math;
 }
 
 .bodyBackground {
-	background: #303030;
+	background: salmon;
 }
 
 .hidden {
@@ -153,7 +154,7 @@ h1, h2, h3, h4, h5, h6, p, form, button, input, textarea {
 #divResult {
 	width: 200px;
 	height: 250px;
-	font-family: cursive;
+	font-family: math;
 	text-decoration: none;
 	transition: 1s;
 	text-align: center;
@@ -164,7 +165,7 @@ h1, h2, h3, h4, h5, h6, p, form, button, input, textarea {
 	border-radius: 10px;
 	background: #303030;
 	text-align: center;
-	font-family: cursive;
+	font-family: math;
 	text-decoration: none;
 	color: snow;
 	padding: 10px 15px;

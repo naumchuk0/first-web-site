@@ -1,5 +1,5 @@
 #Str{
-	background: rebeccapurple;
+	background: salmon;
 	color: white;
 	width: 100px;
 	height: 20px;
@@ -10,6 +10,7 @@
 	display: inline-block;
 	border-radius: 20px;
 	cursor: pointer;
+	font-family: math;
 }
 #timer {
 	position: absolute;
@@ -22,6 +23,7 @@
 	margin-top: 20px;
 	top: 0;
 	right: 0;
+	font-family: math;
 	left: 0;
 }
 #Mode{
@@ -30,13 +32,14 @@
 	text-decoration: none;
 	margin: 20px;
 	display: inline;
+	font-family: math;
 	color: white;
 }
 .But{
 	width: 75px;
 	height: 75px;
 	color: white;
-	background: mediumpurple;
+	background: salmon;
 	text-align: center;
 	text-decoration: none;
 	padding: 10px 15px;
@@ -49,7 +52,7 @@
 	width: 175px;
 	height: 50px;
 	color: white;
-	background: rebeccapurple;
+	background: darkred;
 	text-align: center;
 	text-decoration: none;
 	padding: 10px 15px;
@@ -62,7 +65,7 @@
 	width: 175px;
 	height: 50px;
 	color: white;
-	background: purple;
+	background: limegreen;
 	text-align: center;
 	text-decoration: none;
 	padding: 10px 15px;
@@ -96,6 +99,32 @@
     right: 0;
     margin: auto;
     transition: 5s;
+}
+#changeBackgroundSal {
+	background: salmon;
+	height: 20px;
+	width: 40px;
+	padding: 20px 15px;
+	margin-top: 20px;
+	display: inline-block;
+	border-radius: 30px;
+	cursor: pointer;
+	margin-left: 20px;
+	border: none;
+	float: right;
+}
+#changeBackgroundBla {
+	background: #303030;
+	height: 20px;
+	width: 40px;
+	padding: 20px 15px;
+	margin-top: 20px;
+	display: inline-block;
+	border-radius: 30px;
+	cursor: pointer;
+	margin-left: 20px;
+	border: none;
+	float: right;
 }
 img{
 	height: 75px;

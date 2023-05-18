@@ -3,19 +3,19 @@ $("#changeBackgroundSal").on('click', function() {
 	$(this).addClass('hidden');
 	$("body").addClass('bodyBackground');
 	$("#But").css({
-		"background": 'salmon'
+		"background": '#303030'
 	});
 	$("#labelGreen").css({
-		"background": 'salmon'
+		"background": '#303030'
 	});
 	$("#labelRed").css({
-		"background": 'salmon'
+		"background": '#303030'
 	});
 	$("#res").css({
-		"background": 'salmon'
+		"background": '#303030'
 	});
 	$("#OK").css({
-		"background": 'salmon'
+		"background": '#303030'
 	});
 });
 $("#changeBackgroundBla").on('click', function() {
@@ -23,19 +23,19 @@ $("#changeBackgroundBla").on('click', function() {
 	$("#changeBackgroundSal").removeClass('hidden');
 	$("body").removeClass('bodyBackground');
 	$("#But").css({
-		"background": '#303030'
+		"background": 'salmon'
 	});
 	$("#labelGreen").css({
-		"background": '#303030'
+		"background": 'salmon'
 	});
 	$("#labelRed").css({
-		"background": '#303030'
+		"background": 'salmon'
 	});
 	$("#res").css({
-		"background": '#303030'
+		"background": 'salmon'
 	});
 	$("#OK").css({
-		"background": '#303030'
+		"background": 'salmon'
 	});
 });
 class Popa {
@@ -45,7 +45,7 @@ class Popa {
 		this.arr = ["word", "wanna", "want", "run", "this",
 		 "const", "Popa", "Generate", "Back", "ready", "hide",
 		  "Start", "The","milkman","brought","donuts","cheese","along","with",
-		  "batch", "sit", "visible", "let", "var", "is", "a", "return", "for", "function", "file", "Folder", "Find", "selection", "selecte", "some", "same", "any", "anybody", "somebody", "nobody", "together", "Help", "View", "Goto", "Text", "Sublime", "Notepad", "Notepad++", "JavaScript", "Style", "button", "body", "list", "event", "Hello", "Hi", "link", "href", "often", "How", "who", "We", "type", "android", "new", "now", "know", "understand", "literature", "Math", "Lion", "take", "get", "got" ,"host","display", "lot", "design", "local", "Ukraine", "homeless", "bundle", "lineup", "red", "read", "top", "bot", "bit", "Clown", "Maksum", "Naumchuk" ,"milk","and","a","bottle","of","whiskey","to","houses", "check", "checked", "slider", "width", "height", "debug", "try", "engine"];
+		  "padding", "float", "int", "double", "border", "text", "family", "many", "more", "lot", "much", "How", "are", "ware", "joke", "place", "space", "flight", "client", "employee", "shop", "car", "auto", "icon", "iron", "people", "gender", "male", "road", "quantity" ,"batch", "sit", "visible", "let", "var", "is", "a", "return", "for", "function", "file", "Folder", "Find", "selection", "selecte", "some", "same", "any", "anybody", "somebody", "nobody", "together", "Help", "View", "Goto", "Text", "Sublime", "Notepad", "Notepad++", "JavaScript", "Style", "button", "body", "list", "event", "Hello", "Hi", "link", "href", "often", "How", "who", "We", "type", "android", "new", "now", "know", "understand", "literature", "Math", "Lion", "take", "get", "got" ,"host","display", "lot", "design", "local", "Ukraine", "homeless", "bundle", "lineup", "red", "read", "top", "bot", "bit", "Clown", "Maksum", "Naumchuk" ,"milk","and","a","bottle","of","whiskey","to","houses", "check", "checked", "slider", "width", "height", "debug", "try", "engine"];
 		this.rw = this.generateRandomWords(10);
 		this.indexs = 0;
 		this.count = 0;
@@ -111,11 +111,13 @@ class Popa {
 			"background": 'gray'
 		});
 		$("#txt").on('click', function() {
-			self.timer = setInterval(function(){
-			self.timeleft--;
-			document.getElementById("timer").innerHTML = self.timeleft;
-			}, 1000);
-			setTimeout(() => {self.result(); clearInterval(self.timer);}, 60000);
+			if (self.timeleft == 60) {
+				self.timer = setInterval(function(){
+				self.timeleft--;
+				document.getElementById("timer").innerHTML = self.timeleft;
+				}, 1000);
+				setTimeout(() => {self.result(); clearInterval(self.timer);}, 60000);
+			}
 		});
 		$("#txt").on("keydown", function(event) {
 			if (event.which == 13) {

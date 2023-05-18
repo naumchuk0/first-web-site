@@ -1,3 +1,30 @@
+$("#changeBackgroundSal").on('click', function() {
+	$(".But").css({
+		"background": '#303030'
+	});
+	$("body").css({
+		"background": 'salmon'
+	});
+	$("#Str").css({
+		"background": '#303030'
+	});
+	$(this).addClass('hidden');
+	$("#changeBackgroundBla").removeClass('hidden');
+});
+$("#changeBackgroundBla").on('click', function() {
+	$(".But").css({
+		"background": 'salmon'
+	});
+	$("body").css({
+		"background": '#303030'
+	});
+	$("#Str").css({
+		"background": 'salmon'
+	});
+	$(this).addClass('hidden');
+	$("#changeBackgroundSal").removeClass('hidden');
+});
+
 class Cellpie {
 	constructor() {
 		this.Jake = $("#ForDiv");

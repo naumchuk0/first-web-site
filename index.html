@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="divP">
+		<a id="Im" class="center">Portfolio</a>
+		<label id="lab"></label>
+		<div id="divBut">
+			<button id="changeBG"></button>
+			<button id="resetBG" class="hidden"></button>
+		</div>
+		<a class="But" href="./Game/index.html">Game</a>
+		<a class="But" href="./WPS/index.html">WPS test</a>
+	</div>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+
+	<script type="text/javascript">
+		let l = new Por();
+		setInterval(() => {l.getTime();}, 1000);
+		$("#changeBG").on('click', function() {
+			changeBackGround();
+		});
+		$("#resetBG").on('click', function() {
+			resetBackGround();
+		});
+	</script>
+</body>
+</html>
