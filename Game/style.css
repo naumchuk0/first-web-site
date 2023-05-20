@@ -145,3 +145,71 @@ body{
 .resets {
 	background: mediumpurple !important;
 }
+
+@media (max-width: 480px){
+	#Mode {
+		width: 25px;
+		height: 5px;
+		font-size: 12px;
+		margin: 10px;
+	}
+	#Str {
+		width: 50px;
+		height: 20px;
+		padding: 10px;
+	}
+	#changeBackgroundBla {
+		height: 20px;
+		width: 20px;
+		margin: 5px;
+		margin-top: 25px;
+		padding: 5px;
+	}
+	#changeBackgroundSal {
+		height: 20px;
+		margin: 5px;
+		margin-top: 25px;
+		width: 20px;
+		padding: 5px;
+	}
+	.But {
+		height: 40px;
+		text-align: center;
+		width: 40px;
+		padding: 5px;
+	}
+	img {
+		height: 40px;
+		width: 40px;
+	}
+	#timer {
+		margin-top: 50px;
+		font-size: 24px;
+	}
+}
+
+@media (max-width: 320px){
+	.But {
+		height: 35px;
+		text-align: center;
+		width: 35px;
+		padding: 5px;
+	}
+	img {
+		height: 35px;
+		width: 35px;
+	}
+	#changeBackgroundBla {
+		height: 16px;
+		width: 16px;
+		padding: 5px;
+	}
+	#changeBackgroundSal {
+		height: 16px;
+		width: 16px;
+		padding: 5px;
+	}
+	#Mode {
+		margin: 0px;
+	}
+}

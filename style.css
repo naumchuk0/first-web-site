@@ -31,11 +31,17 @@ h1, h2, h3, h4, h5, h6, p, form, button, input, textarea {
 	margin: auto;
 }
 
-#lab {
-	float: right;
+#Timer {
+	float: left;
 	font-size: 36px;
 	color: whitesmoke;
 	font-family: math;
+}
+
+#divV {
+	width: fit-content;
+	height: fit-content;
+	position: absolute;
 }
 
 .But {
@@ -45,13 +51,12 @@ h1, h2, h3, h4, h5, h6, p, form, button, input, textarea {
 	background: salmon;
 	text-align: center;
 	text-decoration: none;
-	padding: 7px 25px;
+	padding: 5px 10px;
 	display: inline-block;
 	border-radius: 10px;
 	border: none;
 	cursor: pointer;
-	margin-top: 20px;
-	margin-left: 430px;
+	margin: 35px;
 }
 
 #changeBG {
@@ -93,4 +98,43 @@ h1, h2, h3, h4, h5, h6, p, form, button, input, textarea {
 .hidden {
 	transition: 0.2s;
 	visibility: collapse;
+}
+
+@media (max-width: 480px) {
+	#Im {
+		font-size: 24px;
+	}
+	#divP {
+		height: 25px;
+	}
+	#Timer {
+		font-size: 24px;
+	}
+	#divBut {
+		height: 25px;
+		width: 70px;
+	}
+	#changeBG {
+		width: 20px;
+		height: 20px;
+	}
+	#resetBG {
+		width: 20px;
+		height: 20px;
+	}
+	.But {
+		margin: 15px;
+		margin-top: 20px;
+		height: 20px;
+		width: 60px;
+	}
+}
+
+@media (max-width: 320px) {
+	.But {
+		margin: 2px;
+		margin-top: 20px;
+		height: 15px;
+		padding: 5px 10px;
+	}	
 }

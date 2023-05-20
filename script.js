@@ -33,6 +33,6 @@ class Por {
 		self.today = new Date();
 		self.time = self.today.getHours() + ":" + self.today.getMinutes();
 		self.Tim.children('label').remove();
-		self.Tim.append(`<label id="lab">${self.time}</label>`);
+		self.Tim.append(`<label id="Timer">${self.time}</label>`);
 	}
 }

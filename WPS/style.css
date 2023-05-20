@@ -124,7 +124,7 @@ h1, h2, h3, h4, h5, h6, p, form, button, input, textarea {
 	font-size: 20px;
 	display: flex;
 	flex-wrap: wrap;
-	background: #303030;
+	background: salmon;
 	color: green;
 	border-radius: 10px;
 }
@@ -135,7 +135,7 @@ h1, h2, h3, h4, h5, h6, p, form, button, input, textarea {
 	font-size: 20px;
 	display: flex;
 	flex-wrap: wrap;
-	background: #303030;
+	background: salmon;
 	color: red;
 	border-radius: 10px;
 }
@@ -146,7 +146,7 @@ h1, h2, h3, h4, h5, h6, p, form, button, input, textarea {
 	display: block;
 	font-size: 30px;
 	text-align: center;
-	background: #303030;
+	background: salmon;
 	color: snow;
 	border-radius: 10px;
 }
@@ -163,7 +163,7 @@ h1, h2, h3, h4, h5, h6, p, form, button, input, textarea {
 
 #OK {
 	border-radius: 10px;
-	background: #303030;
+	background: salmon;
 	text-align: center;
 	font-family: math;
 	text-decoration: none;
@@ -179,4 +179,31 @@ h1, h2, h3, h4, h5, h6, p, form, button, input, textarea {
 	color: snow;
 	border-radius: 10px;
 	text-align: left;
+}
+
+@media (max-width: 480px) {
+	#txt {
+		width: 300px;
+		margin: 20px;
+	}
+	#timer {
+		width: 180px;
+		margin: 20px;
+	}
+	#changeBackgroundBla {
+		margin: 20px;
+		margin-top: 20px;
+		margin-right: 10px;
+	}
+	#changeBackgroundSal {
+		margin: 20px;
+		margin-top: 20px;
+		margin-right: 10px;
+	}
+}
+
+@media (max-width: 320px) {
+	#But {
+		width: 75px;
+	}
 }
