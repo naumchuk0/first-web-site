@@ -186,17 +186,20 @@ h1, h2, h3, h4, h5, h6, p, form, button, input, textarea {
 		width: 300px;
 		margin: 20px;
 	}
+	#divForWords {
+		width: 300px;
+		margin: 20px;
+	}
 	#timer {
-		width: 180px;
 		margin: 20px;
 	}
 	#changeBackgroundBla {
-		margin: 20px;
+		margin: 15px;
 		margin-top: 20px;
 		margin-right: 10px;
 	}
 	#changeBackgroundSal {
-		margin: 20px;
+		margin: 15px;
 		margin-top: 20px;
 		margin-right: 10px;
 	}
