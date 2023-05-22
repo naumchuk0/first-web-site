@@ -41,6 +41,7 @@ class Cellpie {
 					if (self.timeleft <= 0) {
 						clearInterval(self.timer);
 						self.Jake.addClass('blu');
+						self.Jake.children("button").prop("disabled", false);
 						self.Bob.append(`<button class="Lose">You Lose!</button>`);
 						self.Bob.removeClass('hidden');
 						self.Bob.children().on("click", function() {
@@ -48,8 +49,9 @@ class Cellpie {
 						self.Bob.addClass('hidden');
 						self.Jake.removeClass('blu');
 						self.Jake.children().removeClass('gn');
-				});
-				self.lust_boy = 0;
+						self.Jake.children("button").prop("disabled", false);
+						});
+					self.lust_boy = 0;
 					}
 					document.getElementById("timer").innerHTML = self.timeleft;
 					self.timeleft--;
@@ -60,6 +62,7 @@ class Cellpie {
 				self.lust_boy++;
 				if ($(this).val() == qwe) {
 					clearInterval(self.timer);
+					self.Jake.children("button").prop("disabled", true);
 					self.Jake.addClass('blu');
 					self.Bob.append(`<button class="Win">You Won!</button>`);
 					self.Bob.removeClass('hidden');
@@ -68,13 +71,15 @@ class Cellpie {
 						self.Bob.addClass('hidden');
 						self.Jake.removeClass('blu');
 						self.Jake.children().removeClass('gn');
+						self.Jake.children("button").prop("disabled", false);
 					});
 				self.lust_boy = 0;
 				}
 			}
-			else if($(this).val() != self.lust_boy + 1 && self.lust_boy != 0) {
+			else {
 				clearInterval(self.timer);
 				self.Jake.addClass('blu');
+				self.Jake.children("button").prop("disabled", true);
 				if (self.Bob.children().val() != 1) {
 					self.Bob.children().remove();
 				}
@@ -85,6 +90,7 @@ class Cellpie {
 					self.Bob.addClass('hidden');
 					self.Jake.removeClass('blu');
 					self.Jake.children().removeClass('gn');
+					self.Jake.children("button").prop("disabled", false);
 				});
 				self.lust_boy = 0;
 			}
