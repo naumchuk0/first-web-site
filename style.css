@@ -46,7 +46,6 @@ h1, h2, h3, h4, h5, h6, p, form, button, input, textarea {
 
 .But {
 	width: 70px;
-	height: 20px;
 	color: whitesmoke;
 	background: salmon;
 	text-align: center;
@@ -125,8 +124,6 @@ h1, h2, h3, h4, h5, h6, p, form, button, input, textarea {
 	.But {
 		margin: 15px;
 		margin-top: 20px;
-		height: 20px;
-		width: 60px;
 	}
 }
 
@@ -134,7 +131,5 @@ h1, h2, h3, h4, h5, h6, p, form, button, input, textarea {
 	.But {
 		margin: 2px;
 		margin-top: 20px;
-		height: 20px;
-		padding: 5px 10px;
 	}	
 }
